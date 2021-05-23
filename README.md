@@ -1,2 +1,4 @@
-# c-data-structures
-Some data structures implemented in C
+# Currently implemented data structures
+- Dynamic array (int only)
+- Linked list (int only)
+
