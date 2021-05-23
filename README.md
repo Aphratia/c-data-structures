@@ -3,7 +3,7 @@
 - Linked list (int only)
 
 ### TODO
-- "Template" using macros
+- "Template" using macros ?
 - Doubly linked list
 - Hashmap
 - Graphs
