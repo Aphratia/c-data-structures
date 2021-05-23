@@ -14,6 +14,7 @@ Array *array_new(void) {
 
 void array_delete(Array *array) {
   free(array->buffer);
+  free(array);
 }
 
 void array_resize(Array *array) {
