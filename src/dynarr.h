@@ -4,21 +4,21 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <errno.h>
+#include "safealloc.h"
 
-typedef struct _Array {
+typedef struct _DynamicArray {
   int *buffer;
   size_t len;
   size_t cap;
-} Array;
+} DynamicArray;
 
-Array *array_new(void);
-void array_delete(Array *array);
-void array_resize(Array *array);
-void array_push(Array *array, int elem);
-void array_set(Array *array, size_t idx, int elem);
-int array_get(Array *array, size_t idx);
-void array_copy(Array *dest, Array *src);
-void array_print(Array *array);
+DynamicArray *dynarr_new(void);
+void dynarr_delete(DynamicArray *array);
+void dynarr_resize(DynamicArray *array);
+void dynarr_push(DynamicArray *array, int elem);
+void dynarr_set(DynamicArray *array, size_t idx, int elem);
+int dynarr_get(DynamicArray *array, size_t idx);
+void dynarr_copy(DynamicArray *dest, DynamicArray *src);
+void dynarr_print(DynamicArray *array);
 
 #endif
